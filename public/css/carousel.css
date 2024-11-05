@@ -1,0 +1,51 @@
+#carouselProjects{
+    width: 100vw;
+    height: 80vh;
+}
+#carouselProjects .carousel-inner {
+    height: 100%; /* Faz com que os itens internos preencham a altura do carrossel */
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.radial-gradient-bg {
+    background: radial-gradient(circle, #586168, #080A09, #080A09);
+    background-position: 20% center; /* Move o gradiente 75% para a direita */
+    background-size: 150%; /* Expande o tamanho do gradiente para cobrir a área */
+}
+
+.btn-visit{
+    background-color: #ffffff;
+    border-radius: 400px;
+    border: none;
+    padding: 10px 40px;
+}
+
+.container-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-image {
+    max-width: 550px; /* Define a largura máxima para a imagem */
+    max-height: 550px; /* Define a altura máxima para a imagem */
+    object-fit: contain; /* Ajusta a imagem para caber dentro das dimensões sem distorcer */
+}
+.images-container{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-50deg); /* Gira a imagem na diagonal */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    margin: -220px -90px 0 0;
+}
+.images-container:hover{
+    transform: rotate(0deg); /* Retorna a imagem para a posição original */
+}

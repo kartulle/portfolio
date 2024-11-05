@@ -29,9 +29,17 @@
     justify-content: space-around;
 }
 
-.container-infos{
+.overlay {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.container-infos {
+    align-self: flex-end; /* Alinha o container-infos ao final do contêiner */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin-bottom: 20px; /* Ajuste para espaçamento da parte inferior */
 }
 
 .inner-image {
@@ -44,7 +52,7 @@
     flex-direction: column;
     transform: rotate(-50deg); /* Gira a imagem na diagonal */
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
-    margin: -220px -90px 0 0;
+    margin: -50px -120px 0 0;
 }
 .images-container:hover{
     transform: rotate(0deg); /* Retorna a imagem para a posição original */

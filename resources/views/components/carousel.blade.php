@@ -5,10 +5,12 @@
         @foreach ($slides as $index => $slide)
             @component('components.carousel-slide', [
                 'isActive' => $index === 0,
-                // 'backgroundImage' => $slide['backgroundImage'],
                 'images' => $slide['images'],
                 'buttonLink' => $slide['buttonLink'],
-                'description' => $slide['description']
+                'title' => $slide['title'],
+                'description' => $slide['description'],
+                'warning' => $slide['warning'],
+                'skills' => $slide['skills'],
             ])
             @endcomponent
         @endforeach

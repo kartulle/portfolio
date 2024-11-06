@@ -14,13 +14,19 @@
           // 'backgroundImage' => 'path/to/image1.jpg',
           'images' => ['/images/login-mescola.png', '/images/cards-mescola.png', '/images/dashboard-escola.png'],
           'buttonLink' => 'https://minhaescola.educacao.al.gov.br/',
-          'description' => 'lalalaa'
+          'title' => 'MINHA ESCOLA',
+          'description' => 'Desenvolvido para incentivar as escolas a promoverem tarefas que mantenham a limpeza e reforcem o trabalho em equipe entre os alunos.',
+          'warning' => '*Telas reduzidas para preservar informações confidenciais',
+          'skills' => ['/images/laravel.svg', '/images/bootstrap.svg', '/images/javascript.svg']
       ],
       [
           // 'backgroundImage' => 'path/to/image2.jpg',
           'images' => ['path/to/inner-image3.jpg', 'path/to/inner-image4.jpg'],
           'buttonLink' => 'https://example.com/link2',
-          'description' => 'Descrição do Slide 2'
+          'title' => 'Minha Escola',
+          'description' => 'Descrição do Slide 2',
+          'warning' => '*Telas reduzidas para preservar informações confidenciais',
+          'skills' => ['/images/laravel.svg', '/images/bootstrap.svg', '/images/javascript.svg']
       ]
       // Adicione mais slides conforme necessário
   ];

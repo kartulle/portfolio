@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- Incluir o Header -->
-  {{-- @include('layouts.nav') --}}
+  @include('layouts.nav')
 
   <!-- Conteúdo Principal -->
   <main>

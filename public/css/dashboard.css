@@ -1,6 +1,6 @@
 .imagem-principal {
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     background-image: url('/images/background3.jpg');
     background-size: cover;
     background-position: center 80%;

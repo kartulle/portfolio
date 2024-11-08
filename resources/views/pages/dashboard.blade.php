@@ -38,7 +38,7 @@
           'images' => ['/images/censo1.png', '/images/censo2.png', '/images/censo3.png', '/images/censo4.png'],
           'buttonLink' => 'https://censo.educacao.al.gov.br/',
           'title' => 'CENSO DE SERVIDORES',
-          'description' => 'Desenvolvido para facilitar o cadastro de servidores, anteriormente realizado em papel, o sistema integrou servidores de diversas cidades, agilizando o trabalho de várias equipes. Os dados cadastrados são compartilhados com outro sistema de perfil de lotação, ampliando sua utilidade.',
+          'description' => 'Desenvolvido para agilizar o cadastro de servidores, antes feito em papel, o sistema integrou servidores de várias cidades e compartilha os dados com o sistema de perfil de lotação, ampliando sua utilidade.',
           'warning' => '*Telas reduzidas para preservar informações confidenciais',
           'skills' => ['/images/codeigniter.svg', '/images/php.svg', '/images/bootstrap.svg', '/images/javascript.svg', '/images/mysql.svg']
       ],

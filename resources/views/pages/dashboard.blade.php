@@ -75,8 +75,39 @@
   </div>
 </section>
   <section class="about">
-    <h1>NOSSOS SERVIÇOS</h1>
-    <p>Bem-vindo à nossa página sobre nós. Aqui você encontrará informações sobre a nossa empresa, nossa missão e nossos valores.</p>
+    <h1 class="main-text">SERVIÇOS</h1>
+    <div class="custom-cards">
+      <div class="custom-card">
+        <img src="{{ asset('images/icons/graph.svg') }}" alt="">
+        <h2 class="title-card">Análise Estratégica e Planejamento</h2>
+        <p>Planejamento baseado em dados e pesquisa de mercado para entender as necessidades do cliente e criar soluções personalizadas que impulsionam resultados.</p>
+      </div>
+      <div class="custom-card">
+        <img src="{{ asset('images/icons/pencil.svg') }}" alt="">
+        <h2 class="title-card">Design UX/UI Intuitivo</h2>
+        <p>Foco em uma experiência de usuário envolvente e interfaces intuitivas, garantindo uma navegação fácil e uma apresentação visual impactante.</p>
+      </div>
+      <div class="custom-card">
+        <img src="{{ asset('images/icons/screen.svg') }}" alt="">
+        <h2 class="title-card">Desenvolvimento Web</h2>
+        <p>Criação de sites e sistemas sob medida, adaptados aos objetivos e ao perfil do cliente, com tecnologia de ponta e performance otimizada.</p>
+      </div>
+      <div class="custom-card">
+        <img src="{{ asset('images/icons/cart.svg') }}" alt="">
+        <h2 class="title-card">Lojas Virtuais que Vendem Mais</h2>
+        <p>Desenvolvimento de e-commerces focados em conversão, com experiência de compra simples e ferramentas de vendas integradas para potencializar os resultados.</p>
+      </div>
+      <div class="custom-card">
+        <img src="{{ asset('images/icons/shield.svg') }}" alt="">
+        <h2 class="title-card">Proteção e Segurança de Dados</h2>
+        <p>Implementação de práticas rigorosas de segurança para proteger dados e assegurar a integridade do sistema, oferecendo tranquilidade aos clientes.</p>
+      </div>
+      <div class="custom-card">
+        <img src="{{ asset('images/icons/phone.svg') }}" alt="">
+        <h2 class="title-card">Suporte Confiável e Proativo</h2>
+        <p>Atendimento constante e suporte técnico para manter seu site ou sistema sempre atualizado, seguro e pronto para atender ao público.</p>
+      </div>
+    </div>
   </section>
   <div class="container-carousel">
     @component('components.carousel', ['slides' => $slides])

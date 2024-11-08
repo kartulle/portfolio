@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-logo {
@@ -55,8 +54,9 @@
       height: 0;
       flex-direction: column;
       overflow: hidden;
-      background-color: #333;
+      background-color: #1D1D1F;
       transition: height 0.3s ease;
+      gap: 0;
   }
 
   .custom-nav-container .custom-nav-links li {
@@ -69,7 +69,7 @@
   }
 
   .custom-nav-container.active .custom-nav-links {
-      height: 180px;
+      height: 115px;
   }
 
   /* Animação do ícone do menu */

@@ -19,7 +19,7 @@
   <!-- Footer -->
   <footer class="footer">
       <a href="mailto:email@exemplo.com?subject=Contato%20do%20site">Contate por email</a>
-      <p>&copy; {{ date('Y') }} Meu Site. Todos os direitos reservados.</p>
+      <p>&copy; {{ date('Y') }} Karolaine. Todos os direitos reservados.</p>
   </footer>
 
    <!-- Scripts do Bootstrap -->

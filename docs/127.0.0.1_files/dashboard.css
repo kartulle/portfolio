@@ -1,0 +1,113 @@
+.imagem-principal {
+  height: 80vh;
+  width: 100%;
+  background-image: url('/images/background3.jpg');
+  background-size: cover;
+  background-position: center 80%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Define três linhas: espaço inicial, conteúdo, espaço final */
+  color: #E5E5E7;
+  text-align: center;
+  padding: 50px;
+}
+
+.main-container {
+  align-self: start; /* Alinha o conteúdo ao início da primeira row */
+  justify-self: start; /* Alinha o conteúdo ao início horizontalmente */
+  margin: 2%;
+}
+
+.skills-container {
+  align-self: end; /* Alinha o conteúdo ao final da segunda row */
+  justify-self: end; /* Alinha o conteúdo ao final horizontalmente */
+  margin: 0 2%;
+}
+
+.skills-container img{
+  margin-left: 20px;
+}
+
+.main-text {
+  font-size: 2rem;  
+  font-weight: 700;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Estilo para a seção Sobre */
+.about {
+  padding-top: 40px;
+  text-align: center;
+  color: #1D1D1F;
+}
+
+.custom-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+  grid-template-rows: repeat(2, 1fr); /* 2 linhas de tamanhos iguais */
+  gap: 20px; /* Espaçamento entre os cartões */
+  padding: 20px;
+}
+
+.custom-card {
+  background-color: #F5F5F7;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-card img{
+  width: 50px;
+  height: 50px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 914px) {
+  .custom-cards {
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas */
+    grid-template-rows: repeat(3, auto); /* Define 3 linhas */
+  }
+
+  .main-container {
+    align-self: center; /* Alinha o conteúdo ao início da primeira row */
+    justify-self: center; /* Alinha o conteúdo ao início horizontalmente */
+  }
+  
+  .skills-container {
+    align-self: end; /* Alinha o conteúdo ao final da segunda row */
+    justify-self: center; /* Alinha o conteúdo ao final horizontalmente */
+  }
+}
+
+@media (max-width: 612px){
+  .custom-cards {
+    grid-template-columns: repeat(1, 1fr); /* Define 2 colunas */
+    grid-template-rows: repeat(6, auto); /* Define 3 linhas */
+  }
+
+  .skills-container img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .imagem-principal{
+    padding: 25px;
+  }
+}

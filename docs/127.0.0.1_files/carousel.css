@@ -1,0 +1,219 @@
+@import url('/css/main.css');
+
+#carouselProjects{
+    width: 100%;
+    height: 85vh;
+}
+#carouselProjects .carousel-inner {
+    height: 100%; /* Faz com que os itens internos preencham a altura do carrossel */
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.radial-gradient-bg {
+    background: radial-gradient(circle, #586168, #080A09, #080A09);
+    background-position: 20% center; /* Move o gradiente 75% para a direita */
+    background-size: 150%; /* Expande o tamanho do gradiente para cobrir a área */
+}
+
+.btn-visit{
+    background-color: #ffffff;
+    border-radius: 400px;
+    border: none;
+    padding: 10px 40px;
+    color: #080A09;
+    text-align: center;
+    max-width: 130px;
+    font-weight: 400;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-visit:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container-slide{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    align-items: flex-end; /* Alinha os elementos na parte inferior */
+    justify-content: flex-start; /* Alinha os elementos à esquerda */
+    height: 100%;
+}
+
+.container-infos {
+    width: 30%; /* Define a largura do container */
+    margin-left: 15%; /* Ajuste a margem para afastar um pouco da borda esquerda */
+    margin-bottom: 5%; /* Ajuste a margem para afastar um pouco da borda inferior */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 1; /* Mantém o container-infos acima do images-container */
+}
+
+.main-info{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.title-project{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.description{
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    text-wrap: wrap;
+}
+
+.warning{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.inner-image {
+    max-width: 550px; /* Define a largura máxima para a imagem */
+    max-height: 550px; /* Define a altura máxima para a imagem */
+    object-fit: contain; /* Ajusta a imagem para caber dentro das dimensões sem distorcer */
+}
+.images-container {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-40deg);
+    transition: transform 0.3s ease, flex-direction 0.3s ease, top 0.3s ease, right 0.3s ease;
+    margin: -50px -120px 0 0;
+    position: absolute;
+    top: -25%;
+    right: 20%;
+}
+/* .images-container:hover{
+    transform: rotate(0deg);
+} */
+
+.images-container:hover {
+    display: grid; /* Muda para grid ao fazer hover */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    grid-template-rows: auto auto; /* Cria duas linhas */
+    transform: rotate(0deg);
+    top: 45px; /* Move levemente para baixo */
+    right: 70px; /* Move levemente para a direita */
+}
+
+@media (max-width: 1632px) {
+    .container-infos {
+        margin-left: 10%; /* Reduz a margem esquerda */
+        gap: 20px; /* Diminui o espaçamento entre os elementos */
+    }
+
+    .main-info {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    }
+
+    .title-project {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .description {
+        width: 100%;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+
+    .images-container {
+        top: 5%; /* Ajusta a posição superior para evitar sobreposição */
+        right: 9%; /* Ajusta a posição direita */
+        transform: rotate(-20deg);
+    }
+
+    .images-container:hover {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1150px) {
+    .title-project {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .images-container {
+        top: 1%; /* Ajusta a posição superior para evitar sobreposição */
+        right: 9%; /* Ajusta a posição direita */
+        transform: rotate(-20deg);
+    }
+    .skills-project img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1067px) {
+    #carouselProjects{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container-infos {
+        position: static; /* Remove o posicionamento absoluto em telas pequenas */
+        width: 80%; /* Ajusta a largura para ocupar mais espaço horizontal */
+        margin-bottom: 20px; /* Espaço entre .container-infos e outros elementos */
+        margin: 20px 0;
+    }
+
+    .title-project {
+        font-size: 1.8rem;
+    }
+
+    .images-container {
+        position: static; /* Remove o posicionamento absoluto */
+        width: 100%; /* Ajusta a largura para o layout de coluna */
+        transform: none; /* Remove a rotação em telas pequenas */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que as imagens se ajustem à largura */
+        justify-content: center; /* Centraliza as imagens */
+        margin: 20px 0; /* Espaço ao redor do container de imagens */
+    }
+
+    .inner-image {
+        max-width: 350px;
+    }
+
+    .warning{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+    .images-container:hover {
+        transform: none; /* Desativa o efeito de transformação no hover */
+        display: flex; /* Remove o layout de grid no hover */
+        flex-direction: row; /* Mantém o layout em linha */
+    }
+}
+
+@media (max-width: 425px){
+    .skills-project img{
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,44 +1,56 @@
 .imagem-principal {
-    height: 80vh;
-    width: 100%;
-    background-image: url('/images/background3.jpg');
-    background-size: cover;
-    background-position: center 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  
-  .texto-principal {
-    padding: 20px;
-    margin-bottom: 20rem;
-  }
+  height: 80vh;
+  width: 100%;
+  background-image: url('/images/background3.jpg');
+  background-size: cover;
+  background-position: center 80%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Define três linhas: espaço inicial, conteúdo, espaço final */
+  color: #E5E5E7;
+  text-align: center;
+  padding: 50px;
+}
 
-.skill-icon{
+.main-container {
+  align-self: start; /* Alinha o conteúdo ao início da primeira row */
+  justify-self: start; /* Alinha o conteúdo ao início horizontalmente */
+  margin: 2%;
+}
+
+.skills-container {
+  align-self: end; /* Alinha o conteúdo ao final da segunda row */
+  justify-self: end; /* Alinha o conteúdo ao final horizontalmente */
+  margin: 0 2%;
+}
+
+.skills-container img{
+  margin-left: 20px;
+}
+
+.main-text {
+  font-size: 2rem;  
+  font-weight: 700;
+}
+
+.skill-icon {
   width: 60px;
   height: 60px;
 }
 
-  .habilidades{
-    margin-top: 20rem;
-  }
+/* Estilo para a seção Sobre */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
 
-  /* Estilo para a seção Sobre */
-  .about {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .about h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
+.about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
 
   

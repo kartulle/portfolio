@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+  <!-- Adicione o CSS do Bootstrap após o seu CSS personalizado -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo"><b>Karol</b>.dev</div>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="https://www.linkedin.com/in/karolainelima" target="_blank"><img src="{{ asset('images/linkedin.svg') }}" alt="LinkedIn"></a></li>
-        <li><a href="https://www.instagram.com/kartulle/" target="_blank"><img src="{{ asset('images/insta.svg') }}" alt="Instagram"></a></li>
-        <li><a href="https://wa.me/5582981337181" target="_blank"><img src="{{ asset('images/whatsapp.svg') }}" alt="Whatsapp"></a></li>
+  <header class="custom-header">
+    <div class="custom-logo"><b>Karol</b>.dev</div>
+    <nav class="custom-nav-container">
+      <ul class="custom-nav-links">
+        <li><a href="#carouselProjects">PROJETOS</a></li>
+        <li><a href="https://wa.me/5582981337181" target="_blank">CONTATO</a></li>
       </ul>
     </nav>
-    <div class="menu-toggle" id="menu-toggle">
+    <div class="custom-menu-toggle" id="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
@@ -24,7 +25,7 @@
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function() {
-      const navbar = document.querySelector('.navbar');
+      const navbar = document.querySelector('.custom-nav-container');
       navbar.classList.toggle('active');
       this.classList.toggle('open');
     });

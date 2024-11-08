@@ -2,7 +2,7 @@
 <div class="carousel-item {{ $isActive ? 'active' : '' }} radial-gradient-bg">
     <div class="overlay container-slide"> 
         <div class="container-infos">
-            <a href="{{ $buttonLink }}" class="btn-visit">Visite</a>
+            <a href="{{ $buttonLink }}" class="btn-visit" target="_blank">Visite</a>
             <div class="main-info">
                 <h1 class="title-project">{{ $title }}</h1>
                 <p class="description">{{ $description }}</p>

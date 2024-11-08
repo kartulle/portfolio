@@ -19,7 +19,7 @@
           'skills' => ['/images/laravel.svg', '/images/php.svg', '/images/bootstrap.svg', '/images/javascript.svg', '/images/mysql.svg']
       ],
       [
-          'images' => ['/images/moduloE10login.png', '/images/moduloE10consulta.png', '/images/moduloE10modais1.png'],
+          'images' => ['/images/moduloE10login.png', '/images/moduloE10consulta.png'],
           'buttonLink' => 'https://escola10.educacao.al.gov.br/',
           'title' => 'ESCOLA10 MÓDULO DO ALUNO',
           'description' => 'Desenvolvido para auxiliar alunos beneficiados pelo programa Escola 10, o sistema permite que os estudantes consultem o status do pagamento da bolsa e solicitem ajuda quando necessário.',
@@ -29,7 +29,7 @@
       [
           'images' => ['/images/gppc1.png', '/images/gppc2.png', '/images/gppc3.png'],
           'buttonLink' => 'https://gppc.educacao.al.gov.br/',
-          'title' => 'GESTÃO DE PROCESSOS DE PRESTAÇÃO DE CONTAS',
+          'title' => 'GESTÃO DE PROCESSOS',
           'description' => 'Desenvolvido para aprimorar o desempenho dos servidores no gerenciamento de processos estaduais, o projeto digitalizou e simplificou demandas antes realizadas em papel. ',
           'warning' => '*Telas reduzidas para preservar informações confidenciais',
           'skills' => ['/images/laravel.svg', '/images/php.svg', '/images/bootstrap.svg', '/images/javascript.svg', '/images/mysql.svg']
@@ -44,7 +44,7 @@
       ],
       [
           'images' => ['/images/lotacao1.png', '/images/lotacao2.png', '/images/lotacao3.png', '/images/lotacao4.png'],
-          'buttonLink' => 'https://example.com/link2',
+          'buttonLink' => 'https://lotacao.educacao.al.gov.br/',
           'title' => 'PERFIL DE LOTAÇÃO',
           'description' => 'Desenvolvido para otimizar o gerenciamento de servidores no estado de Alagoas, facilitando o direcionamento de servidores para diferentes unidades administrativas (GERES) conforme as demandas específicas de cada uma.',
           'warning' => '*Telas reduzidas para preservar informações confidenciais (em desenvolvimento)',
